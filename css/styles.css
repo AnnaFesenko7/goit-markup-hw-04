@@ -349,14 +349,21 @@ img {
 }
 
 .client {
-  outline: 1px solid var(--icon-color);
-
+  /* height: 92px; */
   width: 170px;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .client-link {
   padding: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid var(--icon-color);
 }
 
 .client:hover,
@@ -370,9 +377,6 @@ img {
 
 .client-icon {
   fill: var(--icon-color);
-
-  width: 100%;
-  height: 100%;
 }
 
 .client:hover .client-icon,
