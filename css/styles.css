@@ -100,9 +100,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  display: block;
+
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 .auth {
   display: flex;
@@ -349,7 +351,6 @@ img {
 }
 
 .client {
-  /* height: 92px; */
   width: 170px;
   width: 100%;
   height: 100%;
@@ -363,12 +364,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid var(--icon-color);
+  border: 1px solid var(--icon-color);
 }
 
-.client:hover,
-.client:focus {
-  outline: 1px solid var(--accent-color);
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .client:not(:last-child) {
@@ -379,8 +380,8 @@ img {
   fill: var(--icon-color);
 }
 
-.client:hover .client-icon,
-.client:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 /* footer */
@@ -438,10 +439,6 @@ address {
   height: 44px;
 }
 
-/* .footer-link {
-  width: 44px;
-  height: 44px;
-} */
 .footer-icon {
   fill: var(--extra-title-color);
 }
@@ -541,9 +538,11 @@ a {
   margin-left: 30px;
   margin-top: 30px;
 }
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
 }
 
 .project {
